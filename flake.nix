@@ -25,7 +25,7 @@
               asar
             ];
             installPhase = ''
-	           mkdir $out/share
+	           mkdir -p $out/share
               	   cp -r ${p.signal-desktop}/share/* $out/share
               	   asar e $out/${asarSource} $out/share/temp
               	   rm ${asarSource}
