@@ -29,7 +29,7 @@
               	   cp -r ${p.signal-desktop}/share/* $out/share/
 
               	   asar e $out/${asarSource} $out/share/temp
-              	   rm ${asarSource}
+              	   rm $out/${asarSource}
               	   sed -i "1i @import \"${style}\";" "$out/share/temp/${styleSource}"
               	   asar p $out/share/temp ${asarSource}
 
