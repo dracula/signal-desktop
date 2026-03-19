@@ -26,11 +26,14 @@
             ];
             installPhase = ''
 	           mkdir -p $out/share
-              	   cp -r ${p.signal-desktop}/share/* $out/share
+              	   cp -r ${p.signal-desktop}/share/* $out/share/
+
               	   asar e $out/${asarSource} $out/share/temp
               	   rm ${asarSource}
               	   sed -i "1i @import \"${style}\";" "$out/share/temp/${styleSource}"
               	   asar p $out/share/temp ${asarSource}
+
+		   mkdir -p $out/bin
               	   makeWrapper '${p.lib.getExe p.electron_39}' "$out/bin/signal-desktop" \
               	     --add-flags "$out/app_custom.asar" \
                            --set-default ELECTRON_FORCE_IS_PACKAGED 1 \
