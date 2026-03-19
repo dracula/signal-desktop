@@ -29,9 +29,8 @@
               	   cp -r ${p.signal-desktop}/share/* $out/share/
 
               	   asar e $out/${asarSource} $out/share/temp
-              	   cat ${style} > "$out/share/temp/${styleSource}"
+              	   cat ${style} > $out/share/temp/${styleSource}
               	   asar p $out/share/temp $out/app_custom.asar
-		   rm -r $out/share/temp
 
 		   mkdir -p $out/bin
               	   makeWrapper '${p.lib.getExe p.electron_39}' "$out/bin/signal-desktop" \
