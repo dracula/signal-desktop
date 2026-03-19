@@ -5,7 +5,6 @@
   };
 
   outputs = { self, nixpkgs }: {
-    formatter."x86_64-linux" = pkgs.nixfmt-tree;
 
     overlays = f: p: {
        signal-desktop = let 
@@ -14,7 +13,7 @@
 	 version = p.signal-desktop.version;
 	 src = p.signal-destkop.src;
 	 asarSource = "share/signal-desktop/app.asar";
-	 styleSource = "stylesheets/manifest.css"
+	 styleSource = "stylesheets/manifest.css";
        in {
          inherit name version src;
 	 nativeBuildInputs = with pkgs; [
@@ -56,7 +55,7 @@
 
 
        };
-    }
+    };
     
   };
 }
