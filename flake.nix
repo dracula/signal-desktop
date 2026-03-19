@@ -26,7 +26,7 @@
 	   rm ${asarSource}
 	   sed -i "1i @import \"${style}\";" "$out/share/temp/${styleSource}"
 	   asar p $out/share/temp ${asarSource}
-	   makeWrapper '${p.lib.getExe prev.electron_39}' "$out/bin/signal-desktop" \
+	   makeWrapper '${p.lib.getExe p.electron_39}' "$out/bin/signal-desktop" \
 	     --add-flags "$out/app_custom.asar" \
              --set-default ELECTRON_FORCE_IS_PACKAGED 1 \
              --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=WaylandWindowDecorations --enable-wayland-ime=true}}" \
