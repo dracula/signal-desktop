@@ -16,7 +16,7 @@
 	 styleSource = "stylesheets/manifest.css";
        in {
          inherit name version src;
-	 nativeBuildInputs = with pkgs; [
+	 nativeBuildInputs = with p; [
 	    makeWrapper
 	    asar
          ];
