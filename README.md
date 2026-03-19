@@ -6,8 +6,19 @@ inspired of [Catppuccin themes](https://github.com/CalfMoon/signal-desktop)
 
 ## Install
 
-All instructions can be found at [draculatheme.com/Signal](https://draculatheme.com/Signal) or [md](./INSTALL.md)
+### linux 
+#### nixos flake 
 
+add on input
+```nix 
+dracula.url = "github:charlieTUX/dracula-signal";
+```
+and add overlays with 
+```
+overlays = [
+        inputs.dracula.overlays
+];
+```
 ## Team
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/foobar/graphs/contributors).

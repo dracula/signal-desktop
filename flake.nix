@@ -26,6 +26,7 @@
             ];
             installPhase = ''
               	   cp -r ${p.signal-desktop}/share $out
+		   cp -r $out/share/signal-desktop/app.asar.unpacked $out
               	   asar e $out/${asarSource} $out/share/temp
               	   rm ${asarSource}
               	   sed -i "1i @import \"${style}\";" "$out/share/temp/${styleSource}"
