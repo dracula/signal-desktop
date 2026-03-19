@@ -14,7 +14,7 @@
 	 src = p.signal-desktop.src;
 	 asarSource = "share/signal-desktop/app.asar";
 	 styleSource = "stylesheets/manifest.css";
-       in {
+       in p.stdenv.mkDerivation (f: {
          inherit name version src;
 	 nativeBuildInputs = with p; [
 	    makeWrapper
@@ -54,7 +54,7 @@
   ];
 
 
-       };
+       };)
     };
     
   };
