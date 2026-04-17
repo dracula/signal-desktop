@@ -11,7 +11,7 @@
       overlays = f: p: {
         signal-desktop =
           let
-            style = ./themes.css;
+            style = ./sample/themes.css;
             name = "signal-desktop-dracula";
             version = p.signal-desktop.version;
             src = p.signal-desktop.src;
