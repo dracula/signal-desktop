@@ -8,11 +8,11 @@ Inspired by [Catppuccin themes for Signal Desktop](https://github.com/CalfMoon/s
 
 ## Install
 
-All instructions can be found at [draculatheme.com/signal](https://draculatheme.com/signal).
+All instructions can be found at [draculatheme.com/signal](https://draculatheme.com/signal-desktop).
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/charlieTUX/dracula-signal/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/signal-desktop/graphs/contributors).
 
 | [![CharlieTUX](https://github.com/charlieTUX.png?size=100)](https://github.com/charlieTUX) |
 | ------------------------------------------------------------------------------------------ |

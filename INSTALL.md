@@ -5,14 +5,14 @@
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
 
 ```bash
-git clone https://github.com/charlieTUX/dracula-signal.git
+git clone https://github.com/dracula/signal-desktop.git
 ```
 
 The stylesheet you need is at [`sample/themes.css`](sample/themes.css).
 
 #### Install manually
 
-Download using the [GitHub `.zip` download](https://github.com/charlieTUX/dracula-signal/archive/main.zip) option and unzip it. Copy `sample/themes.css` from the archive.
+Download using the [GitHub `.zip` download](https://github.com/dracula/signal-desktop/archive/main.zip) option and unzip it. Copy `sample/themes.css` from the archive.
 
 #### Activating theme
 
@@ -30,7 +30,7 @@ Download using the [GitHub `.zip` download](https://github.com/charlieTUX/dracul
 Add the input:
 
 ```nix
-dracula.url = "github:charlieTUX/dracula-signal";
+dracula.url = "github:dracula/signal-desktop";
 ```
 
 Add overlays:
@@ -72,7 +72,7 @@ asar e "${SIGNAL_DIR}/app.asar" "${TEMP}"
 Download the theme file into the unpacked stylesheets folder:
 
 ```bash
-curl -fsSL "https://raw.githubusercontent.com/charlieTUX/dracula-signal/main/sample/themes.css" -o "${TEMP}/stylesheets/themes.css"
+curl -fsSL "https://raw.githubusercontent.com/dracula/signal-desktop/main/sample/themes.css" -o "${TEMP}/stylesheets/themes.css"
 ```
 
 Add the import at the start of `manifest.css`:
