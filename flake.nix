@@ -33,7 +33,7 @@
                            asar p $out/share/temp $out/app_custom.asar
 
               		   mkdir -p $out/bin
-                           makeWrapper '${p.lib.getExe p.electron_41}' "$out/bin/signal-desktop" \
+                           makeWrapper '${p.lib.getExe p.electron_44}' "$out/signal-desktop" \
                         	--add-flags "$out/app_custom.asar" \
                                 --set-default ELECTRON_FORCE_IS_PACKAGED 1 \
                                 --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=WaylandWindowDecorations --enable-wayland-ime=true}}" \
